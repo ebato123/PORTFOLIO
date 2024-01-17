@@ -1,0 +1,633 @@
+@charset "UTF-8";
+/** IMPORTS **/
+/** ANIMATIONS **/
+/* Profile img animation */
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:200");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+.shadow-drop-2-center {
+  animation: shadow-drop-2-center 6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes shadow-drop-2-center {
+  0% {
+    transform: translateZ(0);
+    box-shadow: 0 0 0 0 transparent;
+  }
+  100% {
+    transform: translateZ(50px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes myAnim {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+/* Background animation */
+@keyframes slidein {
+  from {
+    background-position: top;
+    background-size: 3000px;
+  }
+  to {
+    background-position: -100px 0px;
+    background-size: 2750px;
+  }
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(75, 75, 250, 0.3);
+  border-radius: 3px;
+}
+
+.center h1 {
+  text-align: center;
+  color: white;
+  font-family: "Source Code Pro", monospace;
+  text-transform: uppercase;
+}
+
+/* LG Main Proyects Animation */
+.puff-in-bottom {
+  animation: puff-in-bottom 2s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+@keyframes puff-in-bottom {
+  0% {
+    transform: scale(2);
+    transform-origin: 50% 100%;
+    filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: 50% 100%;
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+.puff-in-right {
+  animation: puff-in-right 2s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+@keyframes puff-in-right {
+  0% {
+    transform: scale(2);
+    transform-origin: 100% 50%;
+    filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: 100% 50%;
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+/* LG Main Proyects hover Animations */
+.flicker-in-1 {
+  animation: flicker-in-1 2s linear both;
+}
+@keyframes flicker-in-1 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  10.1% {
+    opacity: 1;
+  }
+  10.2% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  20.1% {
+    opacity: 1;
+  }
+  20.6% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  30.1% {
+    opacity: 1;
+  }
+  30.5% {
+    opacity: 1;
+  }
+  30.6% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  45.1% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 1;
+  }
+  55.1% {
+    opacity: 0;
+  }
+  57% {
+    opacity: 0;
+  }
+  57.1% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  60.1% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  65.1% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  75.1% {
+    opacity: 0;
+  }
+  77% {
+    opacity: 0;
+  }
+  77.1% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  85.1% {
+    opacity: 0;
+  }
+  86% {
+    opacity: 0;
+  }
+  86.1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Language & Tools Icons Hover Animation */
+.rotate-scale-up {
+  animation: rotate-scale-up 1s ease-out both;
+}
+@keyframes rotate-scale-up {
+  0% {
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+/*gradients*/
+/** GENERAL RULES **/
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/** MAIN **/
+body {
+  /* Animated Background */
+  background-image: url("../img/backgrounds/pexels-pixabay-301614(mobile-adaptation).jpg");
+  background-size: cover;
+  animation: slidein 100s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+body header {
+  margin-top: 5%;
+}
+body header section#SECTION-1 {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+body header section#SECTION-2 {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+body header section#SECTION-2 img {
+  background: #e0e0e0;
+  border-radius: 100%;
+  box-shadow: 10px 10px 30px #878787, -10px -10px 30px #ffffff;
+  height: 200px;
+  width: 220px;
+}
+body header nav#SECTION-3 {
+  display: flex;
+  justify-content: center;
+  max-width: 400px;
+}
+body header nav#SECTION-3 section#icons {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+body header nav#SECTION-3 section#icons i {
+  color: black;
+  font-size: 30px;
+}
+body header nav#SECTION-3 section#icons i:hover {
+  animation: myAnim 5s ease 0s 1 normal none;
+}
+body header nav#SECTION-3 .idesc-about {
+  position: relative;
+  left: 30px;
+}
+body header nav#SECTION-3 .idesc-estudios {
+  left: 11px;
+  position: relative;
+}
+body header nav#SECTION-3 .idesc-contacto {
+  right: 20px;
+  position: relative;
+}
+body main .accordion-body {
+  /* ROW of ACCORDION ITEM N°3 */
+}
+body main .accordion-body .row, body main .accordion-body .row-four, body main .accordion-body .row-three, body main .accordion-body .row-two, body main .accordion-body .row-one {
+  /* ROWS PROPERTIES */
+  border-radius: 50px;
+  background: #ffffff;
+  box-shadow: inset 5px 5px 17px #a3a3a3, inset -5px -5px 17px #ffffff;
+  /* BUTTON PROPERTIES */
+  /* IMGs OF THE ACCORDION ITEM N°2 */
+}
+body main .accordion-body .row .btn a, body main .accordion-body .row-four .btn a, body main .accordion-body .row-three .btn a, body main .accordion-body .row-two .btn a, body main .accordion-body .row-one .btn a {
+  text-decoration: none;
+}
+body main .accordion-body .row-one {
+  box-shadow: inset 5px 5px 17px #3cdcf4, inset -5px -5px 17px #ffffff;
+}
+body main .accordion-body .row-one img#logo {
+  width: 150px;
+  height: 150px;
+}
+body main .accordion-body .row-one .btn a.ver {
+  color: black;
+}
+body main .accordion-body .row-one .btn a.github {
+  color: #3cdcf4;
+}
+body main .accordion-body .row-two {
+  box-shadow: inset 5px 5px 17px rgba(84, 84, 84, 0.754), inset -5px -5px 17px #ffffff;
+}
+body main .accordion-body .row-two img#logo {
+  width: 150px;
+  height: 40px;
+}
+body main .accordion-body .row-two .btn a.ver {
+  color: white;
+}
+body main .accordion-body .row-two .btn a.github {
+  color: black;
+}
+body main .accordion-body .row-three {
+  box-shadow: inset 5px 5px 17px #002d49, inset -5px -5px 17px #2fa5ed;
+}
+body main .accordion-body .row-three img#logo {
+  width: 150px;
+  height: 150px;
+}
+body main .accordion-body .row-three .btn a.ver {
+  color: white;
+}
+body main .accordion-body .row-three .btn a.github {
+  color: #2fa5ed;
+}
+body main .accordion-body .row-four .btn a.github {
+  color: black;
+}
+body main .accordion-body .row .img-ai2, body main .accordion-body .row-one .img-ai2, body main .accordion-body .row-two .img-ai2, body main .accordion-body .row-three .img-ai2, body main .accordion-body .row-four .img-ai2 {
+  max-width: 100px;
+  max-height: 100px;
+  margin-bottom: 4%;
+}
+body main .accordion-body .row#ai3, body main .accordion-body #ai3.row-one, body main .accordion-body #ai3.row-two, body main .accordion-body #ai3.row-three, body main .accordion-body #ai3.row-four {
+  border-radius: 0%;
+  box-shadow: none;
+  /* IMGs OF THE ACCORDION ITEM N°3 */
+}
+body main section#lg-main {
+  display: none;
+}
+body footer {
+  padding-top: 60px;
+}
+body footer .row, body footer main .accordion-body .row-one, body main .accordion-body footer .row-one, body footer main .accordion-body .row-two, body main .accordion-body footer .row-two, body footer main .accordion-body .row-three, body main .accordion-body footer .row-three, body footer main .accordion-body .row-four, body main .accordion-body footer .row-four {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* LINKS */
+}
+body footer .row a, body footer main .accordion-body .row-one a, body main .accordion-body footer .row-one a, body footer main .accordion-body .row-two a, body main .accordion-body footer .row-two a, body footer main .accordion-body .row-three a, body main .accordion-body footer .row-three a, body footer main .accordion-body .row-four a, body main .accordion-body footer .row-four a {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  height: 50px;
+  text-decoration: none;
+  /* ICONS */
+}
+body footer .row a i, body footer main .accordion-body .row-one a i, body main .accordion-body footer .row-one a i, body footer main .accordion-body .row-two a i, body main .accordion-body footer .row-two a i, body footer main .accordion-body .row-three a i, body main .accordion-body footer .row-three a i, body footer main .accordion-body .row-four a i, body main .accordion-body footer .row-four a i {
+  color: black;
+  font-size: 50px;
+}
+body footer .row a i:hover, body footer main .accordion-body .row-one a i:hover, body main .accordion-body footer .row-one a i:hover, body footer main .accordion-body .row-two a i:hover, body main .accordion-body footer .row-two a i:hover, body footer main .accordion-body .row-three a i:hover, body main .accordion-body footer .row-three a i:hover, body footer main .accordion-body .row-four a i:hover, body main .accordion-body footer .row-four a i:hover {
+  animation: myAnim 5s ease 0s 1 normal none;
+}
+
+/**-------------- X-SMALL DISPLAY (xs) --------------**/
+@media (max-width: 575px) {
+  body {
+    margin: 0% !important;
+    padding: 0% !important;
+    width: 100vw !important;
+  }
+  body header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body header #titulo-curriculum {
+    justify-content: center !important;
+  }
+  body header #titulo-curriculum article.icons {
+    display: none;
+  }
+  body main {
+    padding: 0% !important;
+    margin: 0% !important;
+    align-items: center !important;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    border-radius: 0px;
+    box-shadow: 12px 12px 21px #bebebe, -12px -12px 21px #ffffff;
+    display: flex !important;
+    justify-content: center !important;
+    min-height: 380px;
+    width: 100% !important;
+  }
+  body main .accordion-body {
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+  }
+}
+/**-------------- SMALL DISPLAY (s) --------------**/
+@media (max-width: 991px) {
+  body header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+  body header section#SECTION-1 {
+    width: 100%;
+    justify-content: center;
+  }
+  body header section#SECTION-1 section#titulo-curriculum {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+  }
+}
+/**-------------- LARGE DISPLAY (lg) --------------**/
+@media (min-width: 992px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between !important;
+    height: 100vh;
+  }
+  body header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  body header #SECTION-1 {
+    order: 3;
+  }
+  body header #SECTION-1 #titulo-curriculum {
+    justify-content: center !important;
+  }
+  body header #SECTION-1 #titulo-curriculum article.icons {
+    display: none;
+  }
+  body header #SECTION-2 {
+    order: 1;
+  }
+  body header #SECTION-3 {
+    order: 2 !important;
+    width: 40% !important;
+  }
+  body header #SECTION-3 i {
+    font-size: 40px !important;
+  }
+  body header #SECTION-3 section#iconos {
+    justify-content: space-between !important;
+  }
+  body header #SECTION-3 section#icons-desc .idesc-about {
+    left: 6px !important;
+  }
+  body header #SECTION-3 section#icons-desc .idesc-estudios {
+    left: 12px !important;
+  }
+  body header #SECTION-3 section#icons-desc .idesc-contacto {
+    right: -5px !important;
+  }
+  body main .accordion-body .row, body main .accordion-body .row-one, body main .accordion-body .row-two, body main .accordion-body .row-three, body main .accordion-body .row-four {
+    justify-content: center !important;
+    /* IMGs OF THE ACCORDION ITEM N°3 */
+  }
+  body main .accordion-body .row .img-ai3, body main .accordion-body .row-one .img-ai3, body main .accordion-body .row-two .img-ai3, body main .accordion-body .row-three .img-ai3, body main .accordion-body .row-four .img-ai3 {
+    max-width: 600px;
+    margin-bottom: 4%;
+  }
+}
+/**-------------- X-LARGE DISPLAY (xl) --------------**/
+@media (min-width: 1200px) {
+  body {
+    align-items: center;
+    background-image: url("../img/backgrounds/pexels-pixabay-301614.jpg");
+    margin: 0%;
+    padding-top: 0rem !important;
+    width: 100vw !important;
+  }
+  body header {
+    align-items: center;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    border-radius: 0px;
+    box-shadow: 12px 12px 21px #bebebe, -12px -12px 21px #ffffff;
+    justify-content: space-between;
+    margin: 0% !important;
+    padding: 1%;
+    width: 100vw !important;
+  }
+  body header section#SECTION-1 {
+    color: #e0e0e0;
+  }
+  body header #SECTION-3 i {
+    color: #e0e0e0 !important;
+  }
+  body header #SECTION-3 .idesc p, body header nav#SECTION-3 .idesc-about p, body header nav#SECTION-3 .idesc-estudios p, body header nav#SECTION-3 .idesc-contacto p {
+    color: #e0e0e0;
+  }
+  body header #SECTION-3 .idesc-about {
+    left: 30px;
+    position: relative;
+  }
+  body header #SECTION-3 .idesc-estudios {
+    left: 11px;
+    position: relative;
+  }
+  body header #SECTION-3 .idesc-contacto {
+    right: 20px;
+    position: relative;
+  }
+  body main .accordion {
+    display: none !important;
+  }
+  body main section#lg-main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* PROYECT CONTAINER N°1 */
+  }
+  body main section#lg-main section#proyects {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  body main section#lg-main section#proyects article.proyects-container {
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+  }
+  body main section#lg-main section#proyects article.proyects-container article.proyect {
+    display: flex;
+    flex-direction: column;
+    /* ROWS PROPERTIES */
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow: inset 5px 5px 17px #a3a3a3, inset -5px -5px 17px #ffffff;
+    margin: 1%;
+    height: 100%;
+    /* BUTTON PROPERTIES */
+    /* Proyect sportIt */
+    /* IMGs OF THE ACCORDION ITEM N°2 */
+  }
+  body main section#lg-main section#proyects article.proyects-container article.proyect div.btn a {
+    text-decoration: none;
+  }
+  body main section#lg-main section#proyects article.proyects-container article.proyect-one {
+    height: 100%;
+  }
+  body main section#lg-main section#proyects article.proyects-container article.proyect-one img#logo {
+    width: 150px;
+    height: 150px;
+  }
+  body main section#lg-main section#proyects article.proyects-container article.proyect-one .btn a.ver {
+    color: black;
+  }
+  body main section#lg-main section#proyects article.proyects-container article.proyect-one .btn a.github {
+    color: #3cdcf4;
+  }
+  body main section#lg-main section#proyects article.proyects-container article.proyect-one:hover {
+    box-shadow: inset 5px 5px 17px #3cdcf4, inset -5px -5px 17px #ffffff;
+  }
+  body main section#lg-main section#proyects article.proyects-container article.proyect-two {
+    height: 100%;
+  }
+  body main section#lg-main section#proyects article.proyects-container article.proyect-two img#logo {
+    width: 150px;
+    height: 40px;
+  }
+  body main section#lg-main section#proyects article.proyects-container article.proyect-two .btn a.ver {
+    color: white;
+  }
+  body main section#lg-main section#proyects article.proyects-container article.proyect-two .btn a.github {
+    color: black;
+  }
+  body main section#lg-main section#proyects article.proyects-container article.proyect-two:hover {
+    box-shadow: inset 5px 5px 17px #ffffff, inset -5px -5px 17px rgba(84, 84, 84, 0.754);
+  }
+  body main section#lg-main section#proyects article.proyects-container article.proyect-three {
+    height: 100%;
+  }
+  body main section#lg-main section#proyects article.proyects-container article.proyect-three img#logo {
+    width: 150px;
+    height: 150px;
+  }
+  body main section#lg-main section#proyects article.proyects-container article.proyect-three .btn a.ver {
+    color: white;
+  }
+  body main section#lg-main section#proyects article.proyects-container article.proyect-three .btn a.github {
+    color: #2fa5ed;
+  }
+  body main section#lg-main section#proyects article.proyects-container article.proyect-three:hover {
+    box-shadow: inset 5px 5px 17px #002d49, inset -5px -5px 17px #2fa5ed;
+  }
+  body main section#lg-main section#proyects article.proyects-container article.proyect-four {
+    height: 100%;
+  }
+  body main section#lg-main section#proyects article.proyects-container article.proyect-four .btn a.github {
+    color: black;
+  }
+  body main section#lg-main section#proyects article.proyects-container article.proyect-four:hover {
+    box-shadow: inset 5px 5px 17px #dec103, inset -5px -5px 17px #ffffff;
+  }
+  body main section#lg-main section#proyects article.proyects-container article.proyect .img-ai2 {
+    max-width: 100px;
+    max-height: 100px;
+    margin-bottom: 4%;
+  }
+  body main section#lg-main article#pc1 {
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+  }
+  body main section#lg-main section#lang-tools {
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.943627451) 71%, rgba(215, 215, 215, 0.9191176471) 100%);
+    width: 100vw !important;
+  }
+  body main section#lg-main section#lang-tools img.img-ai2 {
+    width: auto;
+    height: 60px;
+  }
+  body main section#lg-main section#lang-tools img.img-ai2:hover {
+    animation: rotate-scale-up 1s ease-out both;
+  }
+}/*# sourceMappingURL=main.css.map */

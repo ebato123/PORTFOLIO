@@ -1,0 +1,116 @@
+/*!!!! CSS MOVED TO SCSS  ../scss/main.scss !!!!*/
+
+/** IMPORT RULES **/
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@-webkit-keyframes shadow-drop-2-center{0%{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-transform:translateZ(50px);transform:translateZ(50px);-webkit-box-shadow:0 0 20px 0 rgba(0,0,0,.35);box-shadow:0 0 20px 0 rgba(0,0,0,.35)}}@keyframes shadow-drop-2-center{0%{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-transform:translateZ(50px);transform:translateZ(50px);-webkit-box-shadow:0 0 20px 0 rgba(0,0,0,.35);box-shadow:0 0 20px 0 rgba(0,0,0,.35)}} */
+
+
+/** GENERAL RULES **/
+/* * {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0%;
+  padding: 0%;
+} */
+
+/** ANIMATIONS **/
+
+/* .shadow-drop-2-center{-webkit-animation:shadow-drop-2-center 6s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-2-center 6s cubic-bezier(.25,.46,.45,.94) both} */
+
+
+/** x-small DISPLAY **/
+/* @media (max-width: 383px){
+  .del{
+    display: none;
+  }
+
+  body header section#SECTION-2 img{
+    width: 180px;
+    height:160px;
+  }
+} */
+
+
+/** -----------------------BODY----------------------- **/
+
+/* body{
+  background-image: url("/img/fondo-3d-cubos-blancos.jpg");
+  background-size: cover;
+}
+
+body header section#SECTION-1 section#titulo-curriculum{
+  display: flex;
+
+  justify-content: space-between
+    ;
+  align-items: center;
+}
+
+body header section#SECTION-2{
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+}
+
+body header section#SECTION-2 img{
+  width: 220px;
+  height:200px;
+
+  border-radius: 100%;
+  background: #e0e0e0;  
+  box-shadow:  10px 10px 30px #878787,-10px -10px 30px #ffffff;
+} */
+
+/* body header nav#SECTION-3{
+  display: flex;
+  justify-content: center;
+} */
+
+/* body header nav#SECTION-3 section#iconos{
+  display: flex;
+
+  align-items: center;
+  justify-content: space-around;
+} */
+
+/* 
+body header nav#SECTION-3 section#iconos a i{
+  color:black;
+
+  font-size: 30px;
+} */
+
+/* body header nav#SECTION-3 section#iconos a i:hover{
+  animation: myAnim 5s ease 0s 1 normal none;
+} */
+
+/* @keyframes myAnim {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+
+	25%,
+	75% {
+		opacity: 0;
+	}
+} */
+
+/* body header nav#SECTION-3 section#desc-iconos p#about{
+  position: relative;
+
+  left: 30px;
+}
+body header nav#SECTION-3 section#desc-iconos p#estudios{
+  position: relative;
+
+  left: 11px;
+}
+body header nav#SECTION-3 section#desc-iconos p#contacto{
+  position: relative;
+
+  right: 20px;
+} */

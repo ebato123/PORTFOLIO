@@ -1,0 +1,298 @@
+/** IMPORTS **/
+
+@import './partials/animations';
+@import './partials/colors';
+@import './partials/imports';
+
+/** GENERAL RULES **/
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/** MAIN **/
+body {
+    /* Animated Background */
+    background-image: url('../img/backgrounds/pexels-pixabay-301614(mobile-adaptation).jpg');
+    background-size:cover;
+    -webkit-animation: slidein 100s;
+    animation: slidein 100s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;   
+    header{
+        margin-top: 5%;
+        section#SECTION-1{
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+        section#SECTION-2{
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            img{
+                background: $background-color;  
+                border-radius: 100%;
+                box-shadow:  10px 10px 30px #878787,-10px -10px 30px #ffffff;
+                height:200px;
+                width: 220px;
+            }
+        }
+        nav#SECTION-3{
+            display: flex;
+            justify-content: center;
+            max-width: 400px;
+            section#icons{
+                align-items: center;
+                display: flex;
+                justify-content: space-around;
+                i{
+                    color: $main-color;
+                    font-size: 30px;
+                    &:hover{
+                        animation: myAnim 5s ease 0s 1 normal none;
+                    }
+                }
+            }
+            //AREGLAR//
+            .idesc{
+                &-home{
+                    @extend .idesc;
+                    position: relative;
+                    left: 30px
+                }
+                &-estudios{
+                    @extend .idesc;
+                    left: 11px;
+                    position: relative;
+                }
+                &-contacto{
+                    @extend .idesc;
+                    right: 20px;
+                    position: relative;
+                }
+            }
+        }
+    }
+    main{
+        .about-main img{
+        height: auto;
+        width: 100%;
+        }
+    }
+    footer{
+        padding-top: 60px;
+        .row{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            /* LINKS */
+            a{
+                display: flex;
+                justify-content: center;
+                width: 100px;
+                height: 50px;
+                text-decoration: none;
+                /* ICONS */
+                i{
+                    color: $main-color;
+                    font-size: 50px;
+                    &:hover{
+                        animation: myAnim 5s ease 0s 1 normal none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**-------------- X-SMALL DISPLAY (xs) --------------**/
+@media (max-width: 575px) {
+    body{
+        margin: 0% !important;
+        padding: 0% !important;
+        width: 100vw !important;
+        header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            #titulo-curriculum{
+                justify-content: center !important;
+                article.icons{
+                    display: none;
+                }
+            }
+        }
+        main{
+            background-image: $main-color-gradient;
+            border-radius: 0px;
+            box-shadow:  $box-shadow-color;
+            p{
+                color: $background-color;
+            }
+            h2, h4{
+                color: $background-color;
+            }
+        }
+    }
+}
+
+/**-------------- SMALL DISPLAY (s) --------------**/
+@media (min-width: 576px) {
+    @media (max-width: 991px){
+        body{
+            header{
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                width: 100vw;
+                section#SECTION-1{
+                    width: 100%;
+                    justify-content: center;
+                    section#titulo-curriculum{
+                        align-items: center;
+                        display: flex;
+                        justify-content: space-around;
+                        width: 80%;
+                    }
+                } 
+            }
+            main{
+                background: rgb(255,255,255);
+                background: radial-gradient(circle, rgba(255,255,255,0.9436274509803921) 70%, rgba(215,215,215,0.9191176470588235) 100%);
+                width: 100vw;
+            }
+        }
+    }
+}
+
+/**-------------- LARGE DISPLAY (lg) --------------**/
+@media (min-width: 992px){
+    body{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-between !important;
+        header{
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            #SECTION-1{
+                order: 3;
+                #titulo-curriculum{
+                    justify-content: center !important;
+                    article.icons{
+                        display: none;
+                    }
+                }
+            }
+            #SECTION-2{
+                order: 1;
+            }
+            #SECTION-3{
+                order: 2 !important;
+                width: 40% !important;
+                i{
+                    font-size: 40px !important;
+                }
+                section#iconos{
+                    justify-content: space-between !important;
+                }
+                section#icons-desc{
+                    .idesc{
+                        &-home{
+                            left: 6px !important;
+                        }
+                        &-estudios{
+                            left: 12px !important;
+                        }
+                        &-contacto{
+                            right: -5px !important;
+                        }
+                    }
+                }   
+            }
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            #about-main-body{
+                display: flex;
+                justify-content: center;
+                .about-main{
+                    border-radius: 50px;
+                    border-radius: 50px;
+                    background: #434343;
+                    box-shadow: inset 18px 18px 58px #2b2b2b,
+                                inset -18px -18px 58px #5b5b5b;
+                    border-radius: 10%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin: 1%;
+                    padding: 2%;
+                    width: 50%;
+                    p{
+                        font-size: 1rem;
+                        color: $background-color;
+                    }
+                    h4, h2{
+                        color: $background-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**-------------- X-LARGE DISPLAY (xl) --------------**/
+@media (min-width: 1200px){
+    body{
+        align-items: center;
+        background-image: url('../img/backgrounds/pexels-pixabay-301614.jpg');
+        margin: 0%;
+        padding-top: 0rem !important;
+        width: 100vw !important;
+        header{
+            align-items: center;
+            background-image: $main-color-gradient;
+            border-radius: 0px;
+            box-shadow:  $box-shadow-color;
+            justify-content: space-between;
+            margin: 0% !important;
+            padding: 1%;
+            width: 100vw !important;
+            section#SECTION-1{
+                color: $background-color;
+            }
+            #SECTION-3{
+                i{
+                    color: $background-color !important;
+                }
+                .idesc{
+                    p{
+                        color: $background-color;
+                    }
+                    &-home{
+                        left: 30px;
+                        position: relative;
+                    }
+                    &-estudios{
+                        left: 11px;
+                        position: relative;
+                    }
+                    &-contacto{
+                        right: 20px;
+                        position: relative;
+                    }
+                }
+            }
+        }
+
+    }
+}

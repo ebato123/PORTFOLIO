@@ -1,0 +1,504 @@
+/** IMPORTS **/
+
+@import './partials/animations';
+@import './partials/colors';
+@import './partials/imports';
+
+/** GENERAL RULES **/
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/** MAIN **/
+body {
+    /* Animated Background */
+    background-image: url('../img/backgrounds/pexels-pixabay-301614(mobile-adaptation).jpg');
+    background-size:cover;
+    -webkit-animation: slidein 100s;
+    animation: slidein 100s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;   
+    header{
+        margin-top: 5%;
+        section#SECTION-1{
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+        section#SECTION-2{
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            img{
+                background: $background-color;  
+                border-radius: 100%;
+                box-shadow:  10px 10px 30px #878787,-10px -10px 30px #ffffff;
+                height:200px;
+                width: 220px;
+            }
+        }
+        nav#SECTION-3{
+            display: flex;
+            justify-content: center;
+            max-width: 400px;
+            section#icons{
+                align-items: center;
+                display: flex;
+                justify-content: space-around;
+                i{
+                    color: $main-color;
+                    font-size: 30px;
+                    &:hover{
+                        animation: myAnim 5s ease 0s 1 normal none;
+                    }
+                }
+            }
+            //AREGLAR//
+            .idesc{
+                &-about{
+                    @extend .idesc;
+                    position: relative;
+                    left: 30px
+                }
+                &-estudios{
+                    @extend .idesc;
+                    left: 11px;
+                    position: relative;
+                }
+                &-contacto{
+                    @extend .idesc;
+                    right: 20px;
+                    position: relative;
+                }
+            }
+        }
+    }
+    main{
+        .accordion-body{
+            .row{
+                /* ROWS PROPERTIES */
+                border-radius: 50px;
+                background: #ffffff;
+                box-shadow: inset 5px 5px 17px #a3a3a3,
+                            inset -5px -5px 17px #ffffff;
+                /* BUTTON PROPERTIES */
+                .btn{
+                    a{
+                        text-decoration: none;
+                    }
+                }
+                &-one{
+                    @extend .row;
+                    box-shadow: inset 5px 5px 17px $sport-it-color,
+                            inset -5px -5px 17px #ffffff;
+                    img#logo{
+                        width: 150px;
+                        height: 150px;
+                    }
+                    .btn{
+                        a.ver{
+                            color: $main-color;
+                        }
+                        a.github{
+                            color: $sport-it-color;
+                        }
+                    }
+                }
+                &-two{
+                    @extend .row;
+                    box-shadow: inset 5px 5px 17px rgba(84, 84, 84, 0.754),
+                            inset -5px -5px 17px #ffffff;
+                    img#logo{
+                        width: 150px;
+                        height: 40px;
+                    }
+                    .btn{
+                        a.ver{
+                            color: white;
+                        }
+                        a.github{
+                            color: $main-color;
+                        }
+                    }
+                }   
+                &-three{
+                    @extend .row;
+                    box-shadow: inset 5px 5px 17px $cloud-media-color,
+                            inset -5px -5px 17px $cloud-media-color-2;
+                    img#logo{
+                        width: 150px;
+                        height: 150px;
+                    }
+                    .btn{
+                        a.ver{
+                            color: white;
+                        }
+                        a.github{
+                            color: $cloud-media-color-2;
+                        }
+                    }
+                }  
+                &-four{
+                    @extend .row;
+                    .btn{
+                        a.github{
+                            color: black;
+                        }
+                    }
+                }
+                /* IMGs OF THE ACCORDION ITEM N°2 */
+                .img-ai2{
+                    max-width: 100px;
+                    max-height: 100px;
+                    margin-bottom: 4%;
+                }
+            }
+            /* ROW of ACCORDION ITEM N°3 */
+            .row#ai3{
+                border-radius: 0%;
+                box-shadow: none;
+                /* IMGs OF THE ACCORDION ITEM N°3 */
+                // .img-ai3{
+                // }
+            }
+        }
+        section#lg-main{
+            display: none;
+        }
+    }
+    footer{
+        padding-top: 60px;
+        .row{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            /* LINKS */
+            a{
+                display: flex;
+                justify-content: center;
+                width: 100px;
+                height: 50px;
+                text-decoration: none;
+                /* ICONS */
+                i{
+                    color: $main-color;
+                    font-size: 50px;
+                    &:hover{
+                        animation: myAnim 5s ease 0s 1 normal none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**-------------- X-SMALL DISPLAY (xs) --------------**/
+@media (max-width: 575px) {
+    body{
+        margin: 0% !important;
+        padding: 0% !important;
+        width: 100vw !important;
+        header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            #titulo-curriculum{
+                justify-content: center !important;
+                article.icons{
+                    display: none;
+                }
+            }
+        }
+        main{
+            padding: 0% !important;
+            margin: 0% !important;
+
+            align-items: center !important;
+            background-image: $main-color-gradient;
+            border-radius: 0px;
+            box-shadow:  12px 12px 21px #bebebe,
+                -12px -12px 21px #ffffff;
+            display: flex !important;
+            justify-content: center !important;
+            min-height: 380px;
+            width: 100% !important;
+            .accordion-body{
+                background-image: linear-gradient(to right, #434343 0%, black 100%);
+            }
+        }
+    }
+}
+
+/**-------------- SMALL DISPLAY (s) --------------**/
+@media (max-width: 991px) {
+    body{
+        header{
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            section#SECTION-1{
+                width: 100%;
+                justify-content: center;
+                section#titulo-curriculum{
+                    align-items: center;
+                    display: flex;
+                    justify-content: space-around;
+                    width: 80%;
+                }
+            } 
+            }
+    }
+}
+
+/**-------------- LARGE DISPLAY (lg) --------------**/
+@media (min-width: 992px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between !important;
+        height: 100vh;
+        header{
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            #SECTION-1{
+                order: 3;
+                #titulo-curriculum{
+                    justify-content: center !important;
+                    article.icons{
+                        display: none;
+                    }
+                }
+            }
+            #SECTION-2{
+                order: 1;
+            }
+            #SECTION-3{
+                order: 2 !important;
+                width: 40% !important;
+                i{
+                    font-size: 40px !important;
+                }
+                section#iconos{
+                    justify-content: space-between !important;
+                }
+                section#icons-desc{
+                    .idesc{
+                        &-about{
+                            left: 6px !important;
+                        }
+                        &-estudios{
+                            left: 12px !important;
+                        }
+                        &-contacto{
+                            right: -5px !important;
+                        }
+                    }
+                }   
+            }
+        }
+        main{
+            .accordion-body{
+                .row{
+                    justify-content: center !important;
+                    /* IMGs OF THE ACCORDION ITEM N°3 */
+                    .img-ai3{
+                        max-width: 600px;
+                        // max-height: 100px;
+                        margin-bottom: 4%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**-------------- X-LARGE DISPLAY (xl) --------------**/
+@media (min-width: 1200px){
+    body{
+        align-items: center;
+        background-image: url('../img/backgrounds/pexels-pixabay-301614.jpg');
+        margin: 0%;
+        padding-top: 0rem !important;
+        width: 100vw !important;
+        header{
+            align-items: center;
+            background-image: $main-color-gradient;
+            border-radius: 0px;
+            box-shadow:  12px 12px 21px #bebebe,
+                -12px -12px 21px #ffffff;
+            justify-content: space-between;
+            margin: 0% !important;
+            padding: 1%;
+            width: 100vw !important;
+            section#SECTION-1{
+                color: $background-color;
+            }
+            #SECTION-3{
+                i{
+                    color: $background-color !important;
+                }
+                .idesc{
+                    p{
+                        color: $background-color;
+                    }
+                    &-about{
+                        left: 30px;
+                        position: relative;
+                    }
+                    &-estudios{
+                        left: 11px;
+                        position: relative;
+                    }
+                    &-contacto{
+                        right: 20px;
+                        position: relative;
+                    }
+                }
+            }
+        }
+        main{
+            .accordion{
+                display: none !important;
+            }
+            section#lg-main{
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                section#proyects{
+                    align-items: center;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    article.proyects-container{
+                        align-items: center;
+                        justify-content: center;
+                        width: 50%;
+                        height: 100%;
+                        article.proyect{
+                            display: flex;
+                            flex-direction: column;
+                            /* ROWS PROPERTIES */
+                            border-radius: 50px;
+                            background: #ffffff;
+                            box-shadow: inset 5px 5px 17px #a3a3a3,
+                                        inset -5px -5px 17px #ffffff;
+                            margin: 1%;
+                            height: 100%;
+                            /* BUTTON PROPERTIES */
+                            div.btn{
+                                a{
+                                    text-decoration: none;
+                                }
+                            }
+                            /* Proyect sportIt */
+                            &-one{
+                                height: 100%;
+                                img#logo{
+                                    width: 150px;
+                                    height: 150px;
+                                }
+                                .btn{
+                                    a.ver{
+                                        color: $main-color;
+                                    }
+                                    a.github{
+                                        color: $sport-it-color;
+                                    }
+                                }
+                            }
+                            &-one:hover{
+                                box-shadow: inset 5px 5px 17px $sport-it-color,
+                                inset -5px -5px 17px #ffffff;
+
+                            }
+                            &-two{
+                                height: 100%;
+                                img#logo{
+                                    width: 150px;
+                                    height: 40px;
+                                }
+                                .btn{
+                                    a.ver{
+                                        color: white;
+                                    }
+                                    a.github{
+                                        color: $main-color;
+                                    }
+                                }
+                            }
+                            &-two:hover{
+                                box-shadow: inset 5px 5px 17px #ffffff,
+                                inset -5px -5px 17px rgba(84, 84, 84, 0.754);
+                            }
+                            &-three{
+                                height: 100%;
+                                img#logo{
+                                    width: 150px;
+                                    height: 150px;
+                                }
+                                .btn{
+                                    a.ver{
+                                        color: white;
+                                    }
+                                    a.github{
+                                        color: $cloud-media-color-2;
+                                    }
+                                }
+                            }  
+                            &-three:hover{
+                                box-shadow: inset 5px 5px 17px $cloud-media-color,
+                                inset -5px -5px 17px $cloud-media-color-2;
+                            }
+                            &-four{
+                                height: 100%;
+                                .btn{
+                                    a.github{
+                                        color: black;
+                                    }
+                                }
+                            }
+                            &-four:hover{
+                                box-shadow: inset 5px 5px 17px rgba($color: #dec103, $alpha: 1.0),
+                                inset -5px -5px 17px #ffffff;
+                            }
+                            /* IMGs OF THE ACCORDION ITEM N°2 */
+                            .img-ai2{
+                                max-width: 100px;
+                                max-height: 100px;
+                                margin-bottom: 4%;
+                            }
+                        }
+                    }
+                }
+                /* PROYECT CONTAINER N°1 */
+                article#pc1{
+                    display: flex;
+                    flex-direction: row;
+                    height: 50%;
+                }
+                section#lang-tools{
+                    background: rgb(255,255,255);
+                    background: radial-gradient(circle, rgba(255,255,255,0.9436274509803921) 71%, rgba(215,215,215,0.9191176470588235) 100%);
+                    width: 100vw !important;
+                    img.img-ai2{
+                        width: auto;
+                        height: 60px;
+                        &:hover{
+                            -webkit-animation: rotate-scale-up 1s ease-out both;
+                            animation: rotate-scale-up 1s ease-out both;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

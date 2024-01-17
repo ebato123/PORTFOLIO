@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="scss/main.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Portfolio EM</title>
+  </head>
+  <body >
+    <header>
+      <!-- BANNER SUPERIOR -->
+      <section id="SECTION-1" class="row col-lg-4 pb-3"> 
+        <section id="titulo-curriculum" class="col-12">
+          <article class="icons">
+            <i class="fa-solid fa-bookmark"></i>
+            <i class="fa-solid fa-bookmark"></i>
+            <i class="fa-solid fa-bookmark"></i>
+          </article>
+          <article id="text">
+            <h2 class="text-center">- Portfolio -</h2>
+            <h2 style="font-weight: bold;" class="text-center">Elián Moisés</h2>
+          </article>
+          <article class="icons">
+            <i class="fa-solid fa-bookmark"></i>
+            <i class="fa-solid fa-bookmark"></i>
+            <i class="fa-solid fa-bookmark"></i>
+          </article>
+        </section>
+      </section>
+      <section id="SECTION-2" class="row col-lg-4">
+        <img src="./img/foto-2.jpeg" id="foto-perfil" class="col-6 shadow-drop-2-center"> 
+      </section>
+      <nav id="SECTION-3" class="row col-lg-4">
+        <section id="icons" class="col-12 p-5 pb-3">
+          <a href="/docs/about.html" target="_self"><i class="fa-solid fa-address-book"></i></a>
+          <a href="/docs/studies.html" target="_self"><i class="fa-solid fa-book"></i></a>
+          <a href="mailto:elianmijaelmoises123@gmail.com" target="_self"><i class="fa-solid fa-envelope"></i></a>
+        </section>
+        <section class="idesc col-12 d-flex align-items-center justify-content-around text-center">
+          <p class="idesc-about">About</p>
+          <p class="idesc-estudios">Estudios</p>
+          <p class="idesc-contacto">Contacto</p>
+        </section>
+      </nav>
+    </header>
+    <main class="container mt-5">
+      <!-- XS-S-M-L query MAIN DISPLAY -->
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item" id="proyectos">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+              Proyectos
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <section class="container-fluid">
+                <article class="row row-one mb-4">
+                  <article class="col-12 d-flex justify-content-center"><img src="/img/logo.svg" alt="sportit" id="logo"></article>
+                  <article class="col-12"><p class="text-center">SportIt es una proyecto no interactivo que sólo contiene HMTL y CSS puro. Creé el proyecto con el propósito de probarme a mí mismo sobre el uso manual de estos dos lenguages sin utilizar un framework.</p></article>
+                  <article class="col-12 d-flex justify-content-evenly pt-4 pb-5">
+                    <div class="btn btn-info"><a href="https://astounding-dolphin-0ba36d.netlify.app" class="ver">Ver</a></div>
+                    <div class="btn btn-outline-info"><a href="https://github.com/ebato123/FRONT-END---FinalExam1" class="github">GitHub</a></div>
+                  </article>
+                </article>
+                <article class="row row-two mb-4">
+                  <article class="col-12 d-flex justify-content-center"><img src="/img/FancyCalculator.png" alt="fancy-calculator" id="logo" class="mt-4 mb-4"></article>
+                  <article class="col-12"><p class="text-center">FancyCalculator es proyecto en proceso, se trata de una calculadora visualmente estética e interactiva, hecha con HTML, CSS y JS (JQuery). Sobre la cual se realizaran pruebas unitarias y testeos de Caja Blanca y Caja Negra. </p></article>
+                  <article class="col-12 d-flex justify-content-evenly pt-4 pb-5">
+                    <div class="btn btn-dark"><a href="https://beautiful-maamoul-deece2.netlify.app" class="ver">Ver</a></div>
+                    <div class="btn btn-outline-dark"><a href="https://github.com/ebato123/FancyCalculator" class="github">GitHub</a></div>
+                  </article>
+                </article>
+                <article class="row row-three mb-4">
+                  <article class="col-12 d-flex justify-content-center"><img src="/img/Cloud Media LOGO.png" alt="cloud-media" id="logo" class="mt-4 mb-4"></article>
+                  <article class="col-12 px-3"><p class="text-center">CloudMedia es un proyecto en proceso, el propósito de la página es que sea un acceso directo elegante a las plataformas de multimedia contemporáneas más populares. Por el momento está hecho con HTML y CSS, pero se incluíran más herramientas conforme el propyecto vaya avanzando.</p></article>
+                  <article class="col-12 d-flex justify-content-evenly pt-4 pb-5">
+                    <div class="btn btn-primary"><a href="https://startling-froyo-44454f.netlify.app" class="ver">Ver</a></div>
+                    <div class="btn btn-outline-primary"><a href="https://github.com/ebato123/Cloud_Media" class="github">GitHub</a></div>
+                  </article>
+                </article>
+                <article class="row row-four">
+                  <article class="col-12 d-flex justify-content-center py-5"><h2 class="text-center">- Portfolio -</h2></article>
+                  <article class="col-12 px-3"><p class="text-center">Este proyecto está hecho a partir de Bootstrap, contiene HTML, CSS (Preprocesado con SASS), y el JS predeterminado de la librería de Bootstrap, por el momento. Los artefactos de bootstrap también fueron modificados con SASS para un estilo más acorde a la página y no tan monótono.</p></article>
+                  <article class="col-12 d-flex justify-content-evenly pt-4 pb-5">
+                    <div class="btn btn-outline-dark"><a href="https://github.com/ebato123/Cloud_Media" class="github">GitHub</a></div>
+                  </article>
+                </article>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              Lenguajes & Herramientas
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <section class="container-fluid ">
+                <article class="row d-flex justify-content-center p-4 mb-4">
+                  <h3 class="text-center mb-4 col-12">- Lenguajes -</h3>
+                  <img class="col-12 img-ai2" src="/img/icons/html-5.png" alt="html icon">
+                  <img class="col-12 img-ai2" src="/img/icons/css-3.png" alt="css icon">
+                  <img class="col-12 img-ai2" src="/img/icons/secuencia-de-comandos-de-java.png" alt="javascript icon">
+                  <img class="col-12 img-ai2" src="/img/icons/piton.png" alt="python icon">
+                  <img class="col-12 img-ai2" src="/img/icons/sql.png" alt="sql icon">
+                  <img class="col-12 img-ai2" src="/img/icons/java.png" alt="java icon">
+                  </article>
+                </article>
+                <article class="row d-flex justify-content-center p-4">
+                  <h3 class="text-center mb-4 col-12">- Herramientas -</h3>
+                  <img class="col-12 img-ai2" src="/img/icons/8666372_react_icon.png" alt="react icon">
+                  <img class="col-12 img-ai2" src="/img/icons/4691300_jquery_icon.png" alt="jquery icon">
+                  <img class="col-12 img-ai2" src="/img/icons/8546808_bootstrap_icon.png" alt="bootstrap icon">
+                  <img class="col-12 img-ai2" src="/img/icons/8666425_sass_icon.png" alt="sass icon">
+                  <img class="col-12 img-ai2" src="/img/icons/8546986_node_icon.png" alt="node icon">
+                  <img class="col-12 img-ai2" src="/img/icons/mysql.png" alt="mysql icon">
+                  <img class="col-12 img-ai2" src="/img/icons/git.png" alt="git icon">
+                  <img class="col-12 img-ai2" src="/img/icons/github.png" alt="github icon">
+                  <img class="col-12 img-ai2" src="/img/icons/adobe-photoshop.png" alt="photoshop icon">
+                  <img class="col-12 img-ai2" src="/img/icons/camtasia.png" alt="camtasia icon">
+                  <img class="col-12 img-ai2" src="/img/icons/archivo-excel.png" alt="excel icon">
+                  <img class="col-12 img-ai2" src="/img/icons/word.png" alt="word icon">
+                  <img class="col-12 img-ai2" src="/img/icons/powerpoint.png" alt="powerpoint icon">
+                  </article>
+                </article>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              Habilidades Blandas
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <section class="container-fluid">
+                <article class="row" id="ai3">
+                  <img class="img-ai3 col-12 col-lg-12 col-xl-6 col-xxl-6" src="/img/test-habilidades-blandas-1.png" alt="habilidades blandas 1" class="habs">
+                  <img class="img-ai3 col-12 col-lg-12 col-xl-6 col-xxl-6" src="/img/test-habilidades-blandas-2.png" alt="habilidades blandas 2" class="habs">
+                </article>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- LG-XL-XXL query MAIN DISPLAY -->
+      <section id="lg-main">
+        <h2 class="puff-in-right pb-4">- Proyectos -</h2>
+        <!-- PROYECTS section -->
+        <section id="proyects">
+          <article class="row proyects-container" id="pc1">
+            <article class="proyect-one mb-4 col-12 proyect puff-in-right">
+              <article class="col-12 d-flex justify-content-center"><img src="/img/logo.svg" alt="sportit" id="logo"></article>
+              <article class="col-12"><p class="text-center">SportIt es una proyecto no interactivo que sólo contiene HMTL y CSS puro. Creé el proyecto con el propósito de probarme a mí mismo sobre el uso manual de estos dos lenguages sin utilizar un framework.</p></article>
+              <article class="col-12 d-flex justify-content-evenly pt-4 pb-5">
+                <div class="btn btn-info"><a href="https://astounding-dolphin-0ba36d.netlify.app" class="ver">Ver</a></div>
+                <div class="btn btn-outline-info"><a href="https://github.com/ebato123/FRONT-END---FinalExam1" class="github">GitHub</a></div>
+              </article>
+            </article>
+            <article class="proyect-two mb-4 col-12 proyect puff-in-right">
+              <article class="col-12 d-flex justify-content-center"><img src="/img/FancyCalculator.png" alt="fancy-calculator" id="logo" class="mt-4 mb-4"></article>
+              <article class="col-12"><p class="text-center">FancyCalculator es proyecto en proceso, se trata de una calculadora visualmente estética e interactiva, hecha con HTML, CSS y JS (JQuery). Sobre la cual se realizaran pruebas unitarias y testeos de Caja Blanca y Caja Negra. </p></article>
+              <article class="col-12 d-flex justify-content-evenly pt-4 pb-5">
+                <div class="btn btn-dark"><a href="https://beautiful-maamoul-deece2.netlify.app" class="ver">Ver</a></div>
+                <div class="btn btn-outline-dark"><a href="https://github.com/ebato123/FancyCalculator" class="github">GitHub</a></div>
+              </article>
+            </article>
+          </article>
+          <article class="row proyects-container">
+            <article class="proyect-three mb-4 col-5 proyect puff-in-bottom">
+              <article class="col-12 d-flex justify-content-center"><img src="/img/Cloud Media LOGO.png" alt="cloud-media" id="logo" class="mt-4 mb-4"></article>
+              <article class="col-12 px-3"><p class="text-center">CloudMedia es un proyecto en proceso, el propósito de la página es que sea un acceso directo elegante a las plataformas de multimedia contemporáneas más populares. Por el momento está hecho con HTML y CSS, pero se incluíran más herramientas conforme el propyecto vaya avanzando.</p></article>
+              <article class="col-12 d-flex justify-content-evenly pt-4 pb-5">
+                <div class="btn btn-primary"><a href="https://startling-froyo-44454f.netlify.app" class="ver">Ver</a></div>
+                <div class="btn btn-outline-primary"><a href="https://github.com/ebato123/Cloud_Media" class="github">GitHub</a></div>
+              </article>
+            </article>
+            <article class="proyect-four col-5 proyect puff-in-bottom">
+              <article class="col-12 d-flex justify-content-center py-5"><h2 class="text-center">- Portfolio -</h2></article>
+              <article class="col-12 px-3"><p class="text-center">Este proyecto está hecho a partir de Bootstrap, contiene HTML, CSS (Preprocesado con SASS), y el JS predeterminado de la librería de Bootstrap, por el momento. Los artefactos de bootstrap también fueron modificados con SASS para un estilo más acorde a la página y no tan monótono.</p></article>
+              <article class="col-12 d-flex justify-content-evenly pt-4 pb-5">
+                <div class="btn btn-outline-dark"><a href="https://github.com/ebato123/Cloud_Media" class="github">GitHub</a></div>
+              </article>
+            </article>
+          </article>
+        </section>
+        <!-- LANG & TOOLS section -->
+        <section id="lang-tools" class="mt-5 p-5">
+          <article class="row d-flex justify-content-center p-4 mb-4">
+            <h3 class="text-center mb-4 col-12">- Lenguajes -</h3>
+            <img class="col-12 img-ai2" src="/img/icons/html-5.png" alt="html icon">
+            <img class="col-12 img-ai2" src="/img/icons/css-3.png" alt="css icon">
+            <img class="col-12 img-ai2" src="/img/icons/secuencia-de-comandos-de-java.png" alt="javascript icon">
+            <img class="col-12 img-ai2" src="/img/icons/piton.png" alt="python icon">
+            <img class="col-12 img-ai2" src="/img/icons/sql.png" alt="sql icon">
+            <img class="col-12 img-ai2" src="/img/icons/java.png" alt="java icon">
+            </article>
+          </article>
+          <article class="row d-flex justify-content-center p-4">
+            <h3 class="text-center mb-4 col-12">- Herramientas -</h3>
+            <img class="col-12 img-ai2" src="/img/icons/8666372_react_icon.png" alt="react icon">
+            <img class="col-12 img-ai2" src="/img/icons/4691300_jquery_icon.png" alt="jquery icon">
+            <img class="col-12 img-ai2" src="/img/icons/8546808_bootstrap_icon.png" alt="bootstrap icon">
+            <img class="col-12 img-ai2" src="/img/icons/8666425_sass_icon.png" alt="sass icon">
+            <img class="col-12 img-ai2" src="/img/icons/8546986_node_icon.png" alt="node icon">
+            <img class="col-12 img-ai2" src="/img/icons/mysql.png" alt="mysql icon">
+            <img class="col-12 img-ai2" src="/img/icons/git.png" alt="git icon">
+            <img class="col-12 img-ai2" src="/img/icons/github.png" alt="github icon">
+            <img class="col-12 img-ai2" src="/img/icons/adobe-photoshop.png" alt="photoshop icon">
+            <img class="col-12 img-ai2" src="/img/icons/camtasia.png" alt="camtasia icon">
+            <img class="col-12 img-ai2" src="/img/icons/archivo-excel.png" alt="excel icon">
+            <img class="col-12 img-ai2" src="/img/icons/word.png" alt="word icon">
+            <img class="col-12 img-ai2" src="/img/icons/powerpoint.png" alt="powerpoint icon">
+            </article>
+          </article>
+        </section>
+      </section>
+    </main>
+    <footer class="container">
+      <section class="row mb-5">
+        <a href="https://github.com/ebato123" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/elian.moises/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/elianson_m" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c9b5addf5e.js" crossorigin="anonymous"></script>
+  </body>
+</html>   
