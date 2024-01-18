@@ -247,6 +247,7 @@ body header nav#SECTION-3 {
   display: flex;
   justify-content: center;
   max-width: 400px;
+  width: 100%;
 }
 body header nav#SECTION-3 section#icons {
   align-items: center;
