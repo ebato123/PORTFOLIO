@@ -84,6 +84,34 @@ body {
         height: auto;
         width: 100%;
         }
+        div#liveToast{
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            .toast-header{
+                display: flex;
+                justify-content: space-between;
+            }
+            .toast-body{
+                display: flex;
+                flex-direction: column;
+                .toast-group{
+                    justify-content: center;
+                    display: flex;
+                    margin: 1%;
+                    p{
+                        margin-left: 4%;
+                    }
+                }
+                i{
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
     }
     footer{
         padding-top: 60px;

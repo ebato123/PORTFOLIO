@@ -277,6 +277,32 @@ body main .about-main img {
   height: auto;
   width: 100%;
 }
+body main div#liveToast a {
+  text-decoration: none;
+  color: black;
+}
+body main div#liveToast .toast-header {
+  display: flex;
+  justify-content: space-between;
+}
+body main div#liveToast .toast-body {
+  display: flex;
+  flex-direction: column;
+}
+body main div#liveToast .toast-body .toast-group {
+  justify-content: center;
+  display: flex;
+  margin: 1%;
+}
+body main div#liveToast .toast-body .toast-group p {
+  margin-left: 4%;
+}
+body main div#liveToast .toast-body i {
+  font-size: 25px;
+}
+body main div#liveToast .toast-body p {
+  font-size: 15px;
+}
 body footer {
   padding-top: 60px;
 }
