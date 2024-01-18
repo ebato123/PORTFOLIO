@@ -65,11 +65,11 @@ body {
                 &-about{
                     @extend .idesc;
                     position: relative;
-                    left: 30px
+                    left: 32.5px;
                 }
                 &-estudios{
                     @extend .idesc;
-                    left: 11px;
+                    left: 14px;
                     position: relative;
                 }
                 &-contacto{
@@ -171,6 +171,34 @@ body {
         }
         section#lg-main{
             display: none;
+        }
+        div#liveToast{
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            .toast-header{
+                display: flex;
+                justify-content: space-between;
+            }
+            .toast-body{
+                display: flex;
+                flex-direction: column;
+                .toast-group{
+                    justify-content: center;
+                    display: flex;
+                    margin: 1%;
+                    p{
+                        margin-left: 4%;
+                    }
+                }
+                i{
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
         }
     }
     footer{

@@ -48,7 +48,6 @@ body {
             justify-content: center;
             max-width: 400px;
             width: 100%;
-
             section#icons{
                 align-items: center;
                 display: flex;
@@ -61,16 +60,15 @@ body {
                     }
                 }
             }
-            //AREGLAR//
             .idesc{
                 &-home{
                     @extend .idesc;
                     position: relative;
-                    left: 30px
+                    left: 33.9px
                 }
                 &-estudios{
                     @extend .idesc;
-                    left: 11px;
+                    left: 14px;
                     position: relative;
                 }
                 &-contacto{
