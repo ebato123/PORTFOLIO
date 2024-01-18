@@ -64,16 +64,16 @@ body {
                 &-home{
                     @extend .idesc;
                     position: relative;
-                    left: 33.9px
+                    left: 33.9px !important;
                 }
                 &-estudios{
                     @extend .idesc;
-                    left: 14px;
+                    left: 14px !important;
                     position: relative;
                 }
                 &-contacto{
                     @extend .idesc;
-                    right: 20px;
+                    right: 20px !important;
                     position: relative;
                 }
             }

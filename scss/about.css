@@ -263,14 +263,14 @@ body header nav#SECTION-3 section#icons i:hover {
 }
 body header nav#SECTION-3 .idesc-home {
   position: relative;
-  left: 33.9px;
+  left: 33.9px !important;
 }
 body header nav#SECTION-3 .idesc-estudios {
-  left: 14px;
+  left: 14px !important;
   position: relative;
 }
 body header nav#SECTION-3 .idesc-contacto {
-  right: 20px;
+  right: 20px !important;
   position: relative;
 }
 body main .about-main img {
