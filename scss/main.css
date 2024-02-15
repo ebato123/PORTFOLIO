@@ -335,6 +335,9 @@ body main .accordion-body .row .img-ai2, body main .accordion-body .row-one .img
   max-height: 100px;
   margin-bottom: 4%;
 }
+body main .accordion-body .row span, body main .accordion-body .row-one span, body main .accordion-body .row-two span, body main .accordion-body .row-three span, body main .accordion-body .row-four span {
+  color: #2fa5ed;
+}
 body main .accordion-body .row#ai3, body main .accordion-body #ai3.row-one, body main .accordion-body #ai3.row-two, body main .accordion-body #ai3.row-three, body main .accordion-body #ai3.row-four {
   border-radius: 0%;
   box-shadow: none;
@@ -411,6 +414,10 @@ body footer .row a i:hover, body footer main .accordion-body .row-one a i:hover,
   }
   body header #titulo-curriculum article.icons {
     display: none;
+  }
+  body header img {
+    max-width: 160px !important;
+    max-height: 140px !important;
   }
   body main {
     padding: 0% !important;
@@ -634,6 +641,12 @@ body footer .row a i:hover, body footer main .accordion-body .row-one a i:hover,
   }
   body main section#lg-main section#proyects article.proyects-container article.proyect-four:hover {
     box-shadow: inset 5px 5px 17px #dec103, inset -5px -5px 17px #ffffff;
+  }
+  body main section#lg-main section#proyects article.proyects-container article.proyect span {
+    color: #2fa5ed;
+  }
+  body main section#lg-main section#proyects article.proyects-container article.proyect span#red {
+    color: red;
   }
   body main section#lg-main section#proyects article.proyects-container article.proyect .img-ai2 {
     max-width: 100px;

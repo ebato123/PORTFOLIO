@@ -159,6 +159,9 @@ body {
                     max-height: 100px;
                     margin-bottom: 4%;
                 }
+                span{
+                    color: $cloud-media-color-2;
+                }
             }
             /* ROW of ACCORDION ITEM N°3 */
             .row#ai3{
@@ -242,6 +245,10 @@ body {
                 article.icons{
                     display: none;
                 }
+            }
+            img{
+                max-width: 160px !important;
+                max-height: 140px !important; 
             }
         }
         main{
@@ -499,6 +506,12 @@ body {
                                 box-shadow: inset 5px 5px 17px rgba($color: #dec103, $alpha: 1.0),
                                 inset -5px -5px 17px #ffffff;
                             }
+                            span{
+                                color: $cloud-media-color-2;
+                                &#red{
+                                    color: red;
+                                }
+                            }
                             /* IMGs OF THE ACCORDION ITEM N°2 */
                             .img-ai2{
                                 max-width: 100px;
@@ -531,3 +544,4 @@ body {
         }
     }
 }
+
